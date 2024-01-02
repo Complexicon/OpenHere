@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleGetInfoString</key>
+  <string>OpenHere</string>
+  <key>CFBundleExecutable</key>
+  <string>openhere</string>
+  <key>CFBundleIdentifier</key>
+  <string>dev.cmplx.openhere</string>
+  <key>CFBundleName</key>
+  <string>openhere</string>
+  <key>CFBundleIconFile</key>
+  <string>open.icns</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.0</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>IFMajorVersion</key>
+  <integer>1</integer>
+  <key>IFMinorVersion</key>
+  <integer>0</integer>
+  <key>LSUIElement</key>
+	<true/>
+  <key>NSAppleEventsUsageDescription</key>
+	<string>Allow Access to Finder</string>
+</dict>
+</plist>

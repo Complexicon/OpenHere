@@ -1,0 +1,31 @@
+#!/bin/sh
+
+if [ $# -lt 2 ]
+then
+echo "usage: ./build <bundle> <outname>"
+exit 1
+fi
+
+TARGET=$(mdfind kMDItemCFBundleIdentifier = "$1")
+
+if [ -z "$TARGET" ]
+then
+echo "bundle-id '$1' not found."
+exit 1
+fi
+
+ICON_FILE=$(plutil -extract "CFBundleIconFile" raw "${TARGET}/Contents/Info.plist")
+
+if ! [[ $ICON_FILE == *.icns ]]
+then
+ICON_FILE="${ICON_FILE}.icns"
+fi
+
+ICON_FILE="${TARGET}/Contents/Resources/${ICON_FILE}"
+APP_CONTENTS="./app/$2.app/Contents"
+mkdir -p "$APP_CONTENTS/MacOS"
+mkdir -p "$APP_CONTENTS/Resources"
+cp ./Info.plist "$APP_CONTENTS/Info.plist"
+plutil -insert OpenBundleID -string "$1" "$APP_CONTENTS/Info.plist"
+cp "$ICON_FILE" "$APP_CONTENTS/Resources/open.icns"
+swiftc main.swift -o "$APP_CONTENTS/MacOS/openhere"
