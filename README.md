@@ -2,6 +2,7 @@
 
 OpenHere is a dead simple tool to open your favorite apps from Finder, alot like OpenInTerminal-Lite.
 You can create multiple different openers with the build script. see the pictures
+these helpers will clone the icon of the app they will open
 
 # pictures
 
