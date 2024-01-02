@@ -5,7 +5,19 @@ You can create multiple different openers with the build script. see the picture
 
 # pictures
 
-TODO: do in online editor lol
+build output for my personal opener helpers
+
+<div>
+  <img src="https://raw.githubusercontent.com/Complexicon/OpenHere/main/pics/example1.png" width="600px">
+</div>
+
+<br>
+
+how they look in your toolbar
+
+<div>
+  <img src="https://raw.githubusercontent.com/Complexicon/OpenHere/main/pics/example2.png" width="600px">
+</div>
 
 # install
 
